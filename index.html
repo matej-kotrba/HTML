@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Tabulka v HTML</title>
+    </head>
+    <body>
+        <header>
+            <h1>Tabulky v HTML</h1>            
+        </header>
+        <main>
+            <h2>Slavná osobnost: ABCDEFGAH</h2>
+            <table border=1>
+                <caption>Vizitka slavné osobnosti</caption>
+                <thead>
+                    <tr>
+                        <th>Portrét</th>
+                        <th colspan="2">Základní údaje</th>
+                        <th>Význanmné činy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3"><img src="img/uli.png" alt="Ulrich Teschner" height="200px" width="150px"></td>
+                        <td colspan="2">Jméno a příjmení</td>
+                        <td rowspan="4">Díla</td>
+                    </tr>
+                    <tr>
+                        <td>Narození</td>
+                        <td>Úmrtí</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" colspan="2">Stručná charakteristika</td>
+                    </tr>
+                    <tr>
+                        <td>Popisek fotky</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Odkaz na wikipedii</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
