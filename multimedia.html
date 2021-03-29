@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <title>Multimédia a HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/multimedia.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Multimedia a HTML</h1>
+            <div class="mode">
+            <button class="button" onclick="zmena()">Přepnout stránku do "Dark Mode".</button>           
+            <button class="button" onclick="zmena1()">Přepnout stránku do "Light Mode".</button>
+            </div>
+            
+        </header>
+        <main>
+            <div class="anim"><img src="./img/tulen.png"></div>
+            <h2>Obrázky v HTML</h2>
+            <figure>
+                <img src="img/komensky.png" alt="Jan Amos Komenský">
+                <figcaption>Český pedagog a spisovatel Jan Amos Komenský</figcaption>
+            </figure>
+            <h2>Audio a video v HTML</h2>
+            <div class="uli">
+            </div>
+            <figure>
+                <!--Video-->
+                <video width="320" height="240" controls muted>
+                    <source src="img/Seal_clapping.mp4" type="video/mp4">
+                        Váš prohlížeč tento formát nepodporuje.
+                </video>
+                <figcaption>Tuleň co se plácá po břiše</figcaption>
+            </figure>
+                <!--Audio-->
+            <figure>
+                <audio controls autoplay>
+                    <source src="img/seal.wav" type="audio/wav">
+                        Váš prohlížeš tento formát nepodporuje.                       
+                    </audio>
+                    <figcaption>Tuleň</figcaption>
+            </figure>
+            <h2>Video z YouTube</h2>
+            <figure>
+            <iframe width="420" height="315" src="https://www.youtube.com/watch?v=tsDxdAdv_Qs"></iframe>
+            </figure>
+        </main>
+        <button type="button" onclick="d()">Click Me !</button>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Datum zjistíte kliknutím</button>
+        <p id="demo"></p>
+        <p id="p2">sasdasd</p>
+        <script>
+            function d() {
+            document.getElementById("demo").innerHTML = ":)";
+              
+            }
+            function zmena() {
+            document.body.style.backgroundImage = "linear-gradient(to right,rgb(24,23,23), grey)";
+            document.body.style.color = "rgb(214, 214, 110)";
+            }
+            function zmena1() {
+            document.body.style.backgroundImage = "linear-gradient(to right,#00ffee, #0062ff9f)";
+            document.body.style.color = "black";
+                
+            }
+
+        </script>
+    
+    </body>
+</html>

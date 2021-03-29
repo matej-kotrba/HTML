@@ -1,0 +1,88 @@
+.mode {
+
+    border: black solid 3px;
+    margin-left: 1850px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-image: repeating-linear-gradient(to right, teal , white, teal);
+    border-radius: 15px;
+    position: fixed;
+    bottom: 0;
+}
+
+
+body {
+    background-image: linear-gradient(to right,#00ffee, #0062ff9f);
+}
+
+img {
+    border: teal 4px solid;
+    border-radius: 15px;
+    
+}
+
+figure {
+    text-align: center;
+}
+
+img:hover {
+    transition: 1s;
+    opacity: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+}
+
+.anim {
+    position: relative;
+    animation: mymove 5s ;
+    animation-timing-function: linear;
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 1300px;}
+
+    
+}
+
+main {
+    width: 1500px;
+    margin: auto;    
+    padding: 10px;
+    border-radius: 30px;
+    border: 4px solid transparent;
+
+    background-origin: border-box;
+     
+}
+
+h1 {
+    margin: 0px 840px;
+    background-image: linear-gradient(to left, rgba(49, 49, 226, 0.014), rgb(0, 0, 255));
+    border-radius: 40px;
+    padding: 5px;
+    margin-top: 20px;
+    border: black 3px solid;
+    margin-bottom: 20px;
+    text-shadow: grey 2px 2px;
+}
+
+h1:hover {
+    background-image: linear-gradient(to left, rgba(255, 7, 7, 0.459), rgb(255, 0, 0));
+}
+
+h2 {
+    text-align: center;
+    background-image: linear-gradient(to left, rgb(3, 240, 240), teal);
+    border-radius: 15px;
+    margin-left: 600px;
+    margin-right: 600px;
+    border: black solid;
+    border-width: 2px 5px;
+    padding: 2px;
+    color: black;
+    text-shadow: teal 2px 2px;
+}

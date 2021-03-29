@@ -4,7 +4,10 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/table.css" rel="stylesheet">
+        
         <title>Tabulka v HTML</title>
     </head>
     <body>
@@ -12,8 +15,8 @@
             <h1>Tabulky v HTML</h1>            
         </header>
         <main>
-            <h2>Slavná osobnost: ABCDEFGAH</h2>
-            <table border=1>
+            <h2>Slavná osobnost: Jan Amos Komenský</h2>
+            <table>
                 <caption>Vizitka slavné osobnosti</caption>
                 <thead>
                     <tr>
@@ -24,27 +27,40 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan="3"><img src="img/uli.png" alt="Ulrich Teschner" height="200px" width="150px"></td>
-                        <td colspan="2">Jméno a příjmení</td>
-                        <td rowspan="4">Díla</td>
+                        <td rowspan="3"><img src="img/komensky.png" alt="Jan Amos Komenský" height="200px" width="200px"></td>
+                        <td colspan="2">Jan Amos Komenský</td>
+                        <td rowspan="4">
+                            jeho myšlenka - Škola hrou<br><br>
+                            díla:<br>
+                            Labyrint světa a ráj srdce<br>
+                            Kancionál<br>
+                            Listové do nebe<br>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Narození</td>
-                        <td>Úmrtí</td>
+                        <td>28.3.1592</td>
+                        <td>15.11.1670</td>
                     </tr>
                     <tr>
-                        <td rowspan="2" colspan="2">Stručná charakteristika</td>
+                        <td rowspan="2" colspan="2">Pedagog, spisovatel, poslední biskup Jednoty bratrské</td>
                     </tr>
                     <tr>
-                        <td>Popisek fotky</td>
+                        <td>Jan Amos Komenský</td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="4">Odkaz na wikipedii</td>
+                        <td colspan="4">https://cs.wikipedia.org/wiki/Jan_Amos_Komensk%C3%BD</td>
                     </tr>
                 </tfoot>
             </table>
+            <h2>Značky a atributy tabulky</h2>
+            <dl>
+                <dt>Colspan</dt>
+                <dd>Atribut zajišťijící rozpětí přes několik spoupců.</dd>
+                <dt>Rowspan</dt>
+                <dd>Atribut zajišťijící rozpětí přes několik řádků.</dd>
+            </dl>
         </main>
         <footer>
 

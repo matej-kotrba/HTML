@@ -1,0 +1,27 @@
+h1 {
+    background-color: red;
+}
+
+table {
+    width: 50%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+[rowspan], tfoot {
+    background-color: yellow;
+}
+
+dt {
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+dd {
+    font-style: italic;
+    margin-top: 10px;
+    margin-left: 0;
+}
