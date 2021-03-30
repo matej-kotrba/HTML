@@ -18,6 +18,7 @@ body {
 img {
     border: teal 4px solid;
     border-radius: 15px;
+    transition: 2s;
     
 }
 
@@ -27,7 +28,8 @@ figure {
 
 img:hover {
     transition: 1s;
-    opacity: 0;
+    opacity: 1;
+    transform: scale(1.5);
 }
 
 body {
