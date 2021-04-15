@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/multimedia.css" rel="stylesheet">
+        <link rel="icon" href="img/tulen.png" type="image/png" sizes="24x24">
+
     </head>
     <body>
         <header>
@@ -17,7 +19,7 @@
             
         </header>
         <main>
-            <div class="anim"><img src="./img/tulen.png"></div>
+            <div class="anim"><a href="https://cs.wikipedia.org/wiki/Tule%C5%88_obecn%C3%BD" target="_blank"><img src="./img/tulen.png"></a></div>
             <h2>Obrázky v HTML</h2>
             <figure>
                 <img src="img/komensky.png" alt="Jan Amos Komenský">
@@ -52,10 +54,11 @@
         <script>
             function d() {
             document.getElementById("demo").innerHTML = ":)";
+            window.alert('kys :)');
               
             }
             function zmena() {
-            document.body.style.backgroundImage = "linear-gradient(to right,rgb(24,23,23), grey)";
+            document.body.style.backgroundImage = "linear-gradient(to bottom right ,rgb(24,23,23), rgb(24,23,28)";
             document.body.style.color = "rgb(214, 214, 110)";
             }
             function zmena1() {

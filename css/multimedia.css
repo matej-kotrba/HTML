@@ -4,12 +4,29 @@
     margin-left: 1850px;
     margin-bottom: 10px;
     padding: 10px;
-    background-image: repeating-linear-gradient(to right, teal , white, teal);
+    background-image: linear-gradient(to bottom, grey, white);
     border-radius: 15px;
     position: fixed;
     bottom: 0;
+    margin-right: 10px;
 }
 
+button {
+    background-image: linear-gradient(to bottom, white, grey);
+    border: grey solid 2px;
+    border-radius: 5px;
+    
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 50ms;
+}
+
+button:active {
+    transform: scaleY(0.9);
+}
 
 body {
     background-image: linear-gradient(to right,#00ffee, #0062ff9f);
@@ -30,6 +47,8 @@ img:hover {
     transition: 1s;
     opacity: 1;
     transform: scale(1.5);
+    border: rgb(235, 38, 38) 4px solid ;
+    
 }
 
 body {
@@ -39,8 +58,8 @@ body {
 
 .anim {
     position: relative;
-    animation: mymove 5s ;
-    animation-timing-function: linear;
+    animation: mymove 10s ;
+    animation-timing-function: steps(1,1);
 }
 
 @keyframes mymove {

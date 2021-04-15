@@ -1,0 +1,52 @@
+main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: grey;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 23%;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+.clear {
+    clear: both;
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        width: 90%;
+    }
+
+    div.gallery {
+        width: 30%;
+      }
+}
+
+@media only screen and (max-width: 800px) {
+    div.gallery {
+        width: 45%;
+      }
+}
+
+@media only screen and (max-width: 500px) {
+    div.gallery {
+        width: 100%;
+      }
+}
