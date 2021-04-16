@@ -1,28 +1,37 @@
 main {
     width: 80%;
     margin: 0 auto;
-    background-color: grey;
 }
 
 div.gallery {
     margin: 5px;
-    border: 1px solid #ccc;
     float: left;
     width: 23%;
+    padding: 10px;
   }
   
-  div.gallery:hover {
-    border: 1px solid #777;
+  div.gallery img:hover {
+    transform:rotateZ(360deg);
+    transition-duration: 2s;
+    
+  
   }
   
   div.gallery img {
     width: 100%;
     height: auto;
+    border: none;
+ 
   }
   
   div.desc {
     padding: 15px;
     text-align: center;
+    border: black 3px solid;
+    margin-top: -15px;
+    border-radius: 0px 0px 10px 10px;
+    background-image: linear-gradient(to top right, whitesmoke, rgb(0, 247, 255));
+    color: black;
   }
 
 .clear {
@@ -49,4 +58,8 @@ div.gallery {
     div.gallery {
         width: 100%;
       }
+}
+
+img:hover {
+  transform: scale(1);
 }

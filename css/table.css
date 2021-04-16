@@ -1,18 +1,25 @@
-h1 {
-    background-color: red;
-}
 
 table {
     width: 50%;
+    
+}
+
+table.ceneter {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table, th, td {
-    border: 1px solid black;
     border-collapse: collapse;
+    background-color: whitesmoke;
+    border: solid 2px orange;
+    color: black !important;
+    text-align: left;
 }
 
+
 [rowspan], tfoot {
-    background-color: yellow;
+    background-color: white;
 }
 
 dt {
@@ -24,4 +31,9 @@ dd {
     font-style: italic;
     margin-top: 10px;
     margin-left: 0;
+}
+
+th {
+    background-color: rgb(109, 106, 106);
+    text-align: center;
 }

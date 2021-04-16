@@ -6,9 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/multimedia.css" rel="stylesheet">
-        <link rel="icon" href="img/tulen.png" type="image/png" sizes="24x24">
+        <link rel="icon" href="img/tulen-upraveny.png" type="image/png" sizes="35x35">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     </head>
+    <!--Horní navigační lišta-->
+    <div class="topnav">
+        <a href="./galerie/index.html">Fotogalerie</a>
+        <a href="./index.html">Tabulka</a>
+        <a class="active" href="#">Multimédia</a>
+      </div> 
     <body>
         <header>
             <h1>Multimedia a HTML</h1>
@@ -18,8 +28,9 @@
             </div>
             
         </header>
+           
         <main>
-            <div class="anim"><a href="https://cs.wikipedia.org/wiki/Tule%C5%88_obecn%C3%BD" target="_blank"><img src="./img/tulen.png"></a></div>
+            <div class="anim"><a href="https://cs.wikipedia.org/wiki/Tule%C5%88_obecn%C3%BD" target="_blank"><img class="tulen" src="./img/tulen.png" alt="Tuleň Obecný"></a></div>
             <h2>Obrázky v HTML</h2>
             <figure>
                 <img src="img/komensky.png" alt="Jan Amos Komenský">
@@ -46,11 +57,14 @@
             <figure>
             <iframe width="420" height="315" src="https://www.youtube.com/watch?v=tsDxdAdv_Qs"></iframe>
             </figure>
+            <img class="tajemstvi" src="./img/tajemstvi1.png"  width="400">
         </main>
+        <footer>
         <button type="button" onclick="d()">Click Me !</button>
         <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Datum zjistíte kliknutím</button>
         <p id="demo"></p>
         <p id="p2">sasdasd</p>
+        
         <script>
             function d() {
             document.getElementById("demo").innerHTML = ":)";
@@ -68,6 +82,6 @@
             }
 
         </script>
-    
+        </footer>
     </body>
 </html>

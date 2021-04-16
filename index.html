@@ -1,69 +1,107 @@
 <!DOCTYPE html>
 <html lang="cs">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/reset.css" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet">
-        <link href="css/table.css" rel="stylesheet">
-        
-        <title>Tabulka v HTML</title>
-    </head>
-    <body>
-        <header>
-            <h1>Tabulky v HTML</h1>            
-        </header>
-        <main>
-            <h2>Slavná osobnost: Jan Amos Komenský</h2>
-            <table>
-                <caption>Vizitka slavné osobnosti</caption>
-                <thead>
-                    <tr>
-                        <th>Portrét</th>
-                        <th colspan="2">Základní údaje</th>
-                        <th>Význanmné činy</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td rowspan="3"><img src="img/komensky.png" alt="Jan Amos Komenský" height="200px" width="200px"></td>
-                        <td colspan="2">Jan Amos Komenský</td>
-                        <td rowspan="4">
-                            jeho myšlenka - Škola hrou<br><br>
-                            díla:<br>
-                            Labyrint světa a ráj srdce<br>
-                            Kancionál<br>
-                            Listové do nebe<br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>28.3.1592</td>
-                        <td>15.11.1670</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2" colspan="2">Pedagog, spisovatel, poslední biskup Jednoty bratrské</td>
-                    </tr>
-                    <tr>
-                        <td>Jan Amos Komenský</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="4">https://cs.wikipedia.org/wiki/Jan_Amos_Komensk%C3%BD</td>
-                    </tr>
-                </tfoot>
-            </table>
-            <h2>Značky a atributy tabulky</h2>
-            <dl>
-                <dt>Colspan</dt>
-                <dd>Atribut zajišťijící rozpětí přes několik spoupců.</dd>
-                <dt>Rowspan</dt>
-                <dd>Atribut zajišťijící rozpětí přes několik řádků.</dd>
-            </dl>
-        </main>
-        <footer>
 
-        </footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/multimedia.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>Tabulka v HTML</title>
+</head>
+<!--Horní navigační lišta-->
+<div class="topnav">
+    <a href="./galerie/index.html">Fotogalerie</a>
+    <a class="active" href="#">Tabulka</a>
+    <a href="./multimedia.html">Multimédia</a>
+</div>
+
+<body>
+    <header>
+        <h1>Tabulky v HTML<i class="fa fa-snowflake-o" aria-hidden="true"></i>
+</h1>
+        <div class="mode">
+            <button class="button" onclick="zmena()">Přepnout stránku do "Dark Mode".</button>
+            <button class="button" onclick="zmena1()">Přepnout stránku do "Light Mode".</button>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="animate__animated animate__bounce">Slavná osobnost :<br> Jan Amos Komenský</h2>
+        <table class="ceneter">
+            <caption>Vizitka slavné osobnosti</caption>
+            <thead>
+                <tr>
+                    <th>Portrét</th>
+                    <th colspan="2">Základní údaje</th>
+                    <th>Význanmné činy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3"><img src="img/komensky.png" alt="Jan Amos Komenský"></td>
+                    <td colspan="2">Jan Amos Komenský</td>
+                    <td rowspan="4">
+                        jeho myšlenka - Škola hrou<br><br>  
+                        díla:<br>
+                        Labyrint světa a ráj srdce
+                        Kancionál
+                        Listy do nebe
+                    </td>
+                </tr>
+                <tr>
+                    <td>28.3.1592</td>
+                    <td>15.11.1670</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" colspan="2">Pedagog, spisovatel, poslední biskup Jednoty bratrské.
+                        Narodil se Nivnici a ve 12 letech mu zemřela sestra a rodiče a tak se ho ujala teta
+                        ve 13 letech začal pracovat jako čeledín. V 16 letech odešel do Přerova a začal se učit na Vyšší
+                        škole jednoty bratrské. V 19 letech odešel studovat do Německa. Po 3 letech se vrátil zpět, byl
+                        vysvědcen na kněze
+                        a odchází do Fulneku. Po bitvě na Bíle hoře byli čeští bratři vyhnáni z Moravy a tak odešel do Brandýsa nad Orlicí.
+                        V roce 1628 se musí definitivně odstěhovat z českých zemí a tak odchází do polského města Lešno kde žije dalších 30 let.
+                    Za svůj život žil na různých místech ale nakonec umíra v Nizozemí a pohřben je v Naardenu.</td>
+                </tr>
+                <tr>
+                    <td>Jan Amos Komenský</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"><a href="https://cs.wikipedia.org/wiki/Jan_Amos_Komensk%C3%BD"
+                            target="_blank">https://cs.wikipedia.org/wiki/Jan_Amos_Komensk%C3%BD</a></td>
+                </tr>
+            </tfoot>
+        </table>
+        <h2>Značky a atributy tabulky</h2>
+        <dl>
+            <dt>Colspan</dt>
+            <dd>Atribut zajišťijící rozpětí přes několik spoupců.</dd>
+            <dt>Rowspan</dt>
+            <dd>Atribut zajišťijící rozpětí přes několik řádků.</dd>
+        </dl>
+    </main>
+    <footer>
+        <script>
+
+            function zmena() {
+                document.body.style.backgroundImage = "linear-gradient(to bottom right ,rgb(24,23,23), rgb(24,23,28)";
+                document.body.style.color = "rgb(214, 214, 110)";
+                
+            }
+            function zmena1() {
+                document.body.style.backgroundImage = "linear-gradient(to right,#00ffee, #0062ff9f)";
+                document.body.style.color = "black";
+
+            }
+        </script>
+    </footer>
+</body>
+
 </html>
