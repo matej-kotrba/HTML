@@ -78,22 +78,10 @@ th {
 }
 
 .ctvrty a {
-    text-decoration: none;
+    text-decoration: underline solid black 2px;
     text-transform: none;
 }
 
-.tabulka {
-    border: black solid 3px;
-
-}
-
-.tabulka:hover {
-    transform:scale(0.95);
-}
-
-.tabulka:active {
-    transform: scale(0.85);
-}
 
 caption {
     background-color: whitesmoke;

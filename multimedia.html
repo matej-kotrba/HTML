@@ -13,15 +13,19 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     </head>
-    <!--Horní navigační lišta-->
-    <div class="topnav">
-        <a href="./galerie/index.html">Fotogalerie</a>
-        <a href="./index.html">Tabulka</a>
-        <a class="active" href="#">Multimédia</a>
-      </div> 
+     
     <body>
+        
+    <!--Horní navigační lišta-->
+        <div class="topnav">
+            <a href="./galerie/index.html">Fotogalerie</a>
+            <a href="./index.html">Tabulka</a>
+            <a class="active" href="#">Multimédia</a>
+          </div>
         <header>
-            <h1 class="animate__animated animate__backInDown">Multimedia a HTML</h1>
+            <h1 class="animate__animated animate__backInDown"><i class="fa fa-video-camera" aria-hidden="true"></i>
+                 Multimedia a HTML <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </h1>
             <div class="mode">
             <button class="button" onclick="zmena()">Přepnout stránku do "Dark Mode".</button>           
             <button class="button" onclick="zmena1()">Přepnout stránku do "Light Mode".</button>
@@ -57,17 +61,19 @@
             <figure>
             <iframe width="420" height="315" src="https://www.youtube.com/watch?v=tsDxdAdv_Qs"></iframe>
             </figure>
-            <img class="tajemstvi" src="./img/tajemstvi1.png"  width="300">
+            <img class="tajemstvi" src="./img/tajemstvi1.png" alt="Tajemstvi"  width="300">
         </main>
         <footer>
+            <hr>
+            <p>Matěj Kotrba - IT1</p>
 
-        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Datum zjistíte kliknutím</button>
+        <!--<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Datum zjistíte kliknutím</button>
         <p id="demo"></p>
-        <p id="p2">sasdasd</p>
+        <p id="p2">sasdasd</p>-->
         
         <script>
             function d() {
-            document.getElementById("demo").innerHTML = ":)";
+            //document.getElementById("demo").innerHTML = ":)";//
             window.alert('Je možné, že neuvidíte video z YouTube kvůli zabezpečení vašeho prohlížeče.');
               
             }

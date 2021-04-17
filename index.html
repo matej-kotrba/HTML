@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/tulen-upraveny.png" type="image/png" sizes="50x50">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/table.css" rel="stylesheet">
     <link href="css/multimedia.css" rel="stylesheet">
@@ -14,16 +15,20 @@
 
     <title>Tabulka v HTML</title>
 </head>
-<!--Horní navigační lišta-->
-<div class="topnav">
-    <a href="./galerie/index.html">Fotogalerie</a>
-    <a class="active" href="#">Tabulka</a>
-    <a href="./multimedia.html">Multimédia</a>
-</div>
+
+
 
 <body>
+    <!--Horní navigační lišta-->
+    <div class="topnav">
+        <a href="./galerie/index.html">Fotogalerie</a>
+        <a class="active" href="#">Tabulka</a>
+        <a href="./multimedia.html">Multimédia</a>
+    </div>
     <header>
-        <h1 class="animate__animated animate__backInDown">Tabulky v HTML<i class="fa fa-snowflake-o" aria-hidden="true"></i>
+        <h1 class="animate__animated animate__backInDown"><i class="fa fa-table" aria-hidden="true"></i>
+             Tabulky v HTML <i class="fa fa-table" aria-hidden="true"></i>
+             
 </h1>
         <div class="mode">
             <button class="button" onclick="zmena()">Přepnout stránku do "Dark Mode".</button>
@@ -76,7 +81,7 @@
             <tfoot>
                 <tr>
                     <td colspan="4" class="ctvrty"><a href="https://cs.wikipedia.org/wiki/Jan_Amos_Komensk%C3%BD"
-                            target="_blank"><button class="tabulka" type="button">Odkaz na wikipedii</a></td>
+                        target="_blank">Odkaz na wikipedii</a></td>
                 </tr>
             </tfoot>
         </table>
@@ -104,6 +109,8 @@
         </dl>
     </main>
     <footer>
+        <hr>
+        <p>Matěj Kotrba - IT1</p>
         <script>
 
             function zmena() {
