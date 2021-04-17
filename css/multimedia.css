@@ -7,8 +7,8 @@
 }
 
 @keyframes mymove {
-    from {left: -500px;}
-    to {left: 2500px;}
+    from {left: -20%;}
+    to {left: 150%;}
 }
 
 .tajemstvi {
