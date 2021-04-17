@@ -11,8 +11,8 @@ div.gallery {
   }
   
   div.gallery img:hover {
-    transform:rotateZ(360deg);
-    transition-duration: 2s;
+    transform:translateY(-20px);
+    transition-duration: 1s;
     
   
   }
@@ -21,14 +21,16 @@ div.gallery {
     width: 100%;
     height: auto;
     border: none;
+    transition: 1s;
  
   }
   
   div.desc {
     padding: 15px;
+    padding-top: 40px ;
     text-align: center;
     border: black 3px solid;
-    margin-top: -15px;
+    margin-top: -35px;
     border-radius: 0px 0px 10px 10px;
     background-image: linear-gradient(to top right, whitesmoke, rgb(0, 247, 255));
     color: black;

@@ -4,6 +4,16 @@ table {
     
 }
 
+img {
+    border: none;
+}
+
+img:hover {
+    transform: none;
+    text-decoration: none;
+    border: none;
+}
+
 table.ceneter {
     margin-left: auto;
     margin-right: auto;
@@ -12,23 +22,28 @@ table.ceneter {
 table, th, td {
     border-collapse: collapse;
     background-color: whitesmoke;
-    border: solid 2px orange;
+    border: solid 3px black;
     color: black !important;
     text-align: left;
 }
 
 
 [rowspan], tfoot {
-    background-color: white;
+    background-color: teal;
+}
+
+dl {
+    text-align: center;
 }
 
 dt {
     font-weight: 800;
     font-size: 1.5em;
+    padding-top: 50px;
 }
 
 dd {
-    font-style: italic;
+    font-style: oblique;
     margin-top: 10px;
     margin-left: 0;
 }
@@ -36,4 +51,54 @@ dd {
 th {
     background-color: rgb(109, 106, 106);
     text-align: center;
+}
+
+.prvni {
+    background-color: lightgreen;
+} 
+
+.druhy {
+    background-color: lightsalmon;
+}
+
+.treti {
+    background-color: lightsteelblue;
+}
+
+.ctvrty {
+    background-color: rgb(252, 252, 122);
+    text-align: center;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+.ctvrty a:visited {
+    color: black;
+    text-transform: none;
+}
+
+.ctvrty a {
+    text-decoration: none;
+    text-transform: none;
+}
+
+.tabulka {
+    border: black solid 3px;
+
+}
+
+.tabulka:hover {
+    transform:scale(0.95);
+}
+
+.tabulka:active {
+    transform: scale(0.85);
+}
+
+caption {
+    background-color: whitesmoke;
+    border-top: solid black 3px;
+    border-left: solid black 3px;
+    border-right: solid black 3px;
+    border-radius: 10px 10px 0px 0px ;
 }

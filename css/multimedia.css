@@ -19,6 +19,13 @@
 }
 
 .tajemstvi:hover {
-    transition: 15s;
+    opacity: 0.8;
+    transition: 25s;
     border: none;
+    
+}
+
+figcaption {
+    font-size: 17px;
+    
 }

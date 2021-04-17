@@ -24,12 +24,13 @@ h1 {
     margin-left: 1850px;
     margin-bottom: 10px;
     padding: 10px;
-    background-image: linear-gradient(to bottom, grey, white);
+    background-color: black;
     border-radius: 15px;
     position: fixed;
     bottom: 0;
     margin-right: 10px;
     box-shadow: 0px 2px 4px;
+    
 }
 
 button {
@@ -94,11 +95,9 @@ h2 {
     text-align: center;
     background-image: linear-gradient(to left, rgb(3, 240, 240), teal);
     border-radius: 15px;
-    margin-left: 600px;
-    margin-right: 600px;
     border: black solid;
     border-width: 2px 5px;
-    padding: 2px;
+    padding: 20px;
     color: black;
     text-shadow: teal 2px 2px;
 }
@@ -140,9 +139,15 @@ h2 {
   @keyframes tulen_border {
     from {border-color: white;}
     to {border-color: black;}
+    from {background-color: black;}
+    to {background-color: white;}   
 }
 
 .mode {
-    animation: tulen_border 3s infinite linear;
+    animation: tulen_border 4s infinite linear;
     animation-direction: alternate;
+}
+
+.info {
+    float: right;
 }

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/multimedia.css" rel="stylesheet">
-        <link rel="icon" href="img/tulen-upraveny.png" type="image/png" sizes="35x35">
+        <link rel="icon" href="img/tulen-upraveny.png" type="image/png" sizes="50x50">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" />
@@ -21,12 +21,12 @@
       </div> 
     <body>
         <header>
-            <h1>Multimedia a HTML</h1>
+            <h1 class="animate__animated animate__backInDown">Multimedia a HTML</h1>
             <div class="mode">
             <button class="button" onclick="zmena()">Přepnout stránku do "Dark Mode".</button>           
             <button class="button" onclick="zmena1()">Přepnout stránku do "Light Mode".</button>
             </div>
-            
+            <button class="info" type="button" onclick="d()">Informace</button>            
         </header>
            
         <main>
@@ -57,10 +57,10 @@
             <figure>
             <iframe width="420" height="315" src="https://www.youtube.com/watch?v=tsDxdAdv_Qs"></iframe>
             </figure>
-            <img class="tajemstvi" src="./img/tajemstvi1.png"  width="400">
+            <img class="tajemstvi" src="./img/tajemstvi1.png"  width="300">
         </main>
         <footer>
-        <button type="button" onclick="d()">Click Me !</button>
+
         <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Datum zjistíte kliknutím</button>
         <p id="demo"></p>
         <p id="p2">sasdasd</p>
@@ -68,7 +68,7 @@
         <script>
             function d() {
             document.getElementById("demo").innerHTML = ":)";
-            window.alert('kys :)');
+            window.alert('Je možné, že neuvidíte video z YouTube kvůli zabezpečení vašeho prohlížeče.');
               
             }
             function zmena() {

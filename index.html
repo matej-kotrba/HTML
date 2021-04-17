@@ -23,7 +23,7 @@
 
 <body>
     <header>
-        <h1>Tabulky v HTML<i class="fa fa-snowflake-o" aria-hidden="true"></i>
+        <h1 class="animate__animated animate__backInDown">Tabulky v HTML<i class="fa fa-snowflake-o" aria-hidden="true"></i>
 </h1>
         <div class="mode">
             <button class="button" onclick="zmena()">Přepnout stránku do "Dark Mode".</button>
@@ -32,7 +32,7 @@
     </header>
 
     <main>
-        <h2 class="animate__animated animate__bounce">Slavná osobnost :<br> Jan Amos Komenský</h2>
+        <h2>Slavná osobnost :<br> Jan Amos Komenský</h2>
         <table class="ceneter">
             <caption>Vizitka slavné osobnosti</caption>
             <thead>
@@ -44,9 +44,10 @@
             </thead>
             <tbody>
                 <tr>
-                    <td rowspan="3"><img src="img/komensky.png" alt="Jan Amos Komenský"></td>
-                    <td colspan="2">Jan Amos Komenský</td>
-                    <td rowspan="4">
+                    
+                    <td class="prvni" rowspan="3"><img src="img/komensky.png" alt="Jan Amos Komenský"></td>
+                    <td class="druhy" colspan="2">Jan Amos Komenský</td>
+                    <td class="treti" rowspan="4">
                         jeho myšlenka - Škola hrou<br><br>  
                         díla:<br>
                         Labyrint světa a ráj srdce
@@ -55,11 +56,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>28.3.1592</td>
-                    <td>15.11.1670</td>
+                    <td class="druhy">28.3.1592</td>
+                    <td class="druhy">15.11.1670</td>
                 </tr>
                 <tr>
-                    <td rowspan="2" colspan="2">Pedagog, spisovatel, poslední biskup Jednoty bratrské.
+                    <td rowspan="2" colspan="2" class="druhy">Pedagog, spisovatel, poslední biskup Jednoty bratrské.
                         Narodil se Nivnici a ve 12 letech mu zemřela sestra a rodiče a tak se ho ujala teta
                         ve 13 letech začal pracovat jako čeledín. V 16 letech odešel do Přerova a začal se učit na Vyšší
                         škole jednoty bratrské. V 19 letech odešel studovat do Německa. Po 3 letech se vrátil zpět, byl
@@ -69,22 +70,37 @@
                     Za svůj život žil na různých místech ale nakonec umíra v Nizozemí a pohřben je v Naardenu.</td>
                 </tr>
                 <tr>
-                    <td>Jan Amos Komenský</td>
+                    <td class="prvni">Jan Amos Komenský</td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="4"><a href="https://cs.wikipedia.org/wiki/Jan_Amos_Komensk%C3%BD"
-                            target="_blank">https://cs.wikipedia.org/wiki/Jan_Amos_Komensk%C3%BD</a></td>
+                    <td colspan="4" class="ctvrty"><a href="https://cs.wikipedia.org/wiki/Jan_Amos_Komensk%C3%BD"
+                            target="_blank"><button class="tabulka" type="button">Odkaz na wikipedii</a></td>
                 </tr>
             </tfoot>
         </table>
         <h2>Značky a atributy tabulky</h2>
         <dl>
-            <dt>Colspan</dt>
-            <dd>Atribut zajišťijící rozpětí přes několik spoupců.</dd>
-            <dt>Rowspan</dt>
+            <dt>tr</dt>
+            <dd>Vytvoření řady tabulky</dd>
+            <dt>th</dt>
+            <dd>Nadpis kategorie tabulky</dd>
+            <dt>td</dt>
+            <dd>Data jednotlivých buněk tabulky</dd>
+            <dt>colspan</dt>
+            <dd>Atribut zajišťijící rozpětí přes několik sloupců.</dd>
+            <dt>rowspan</dt>
             <dd>Atribut zajišťijící rozpětí přes několik řádků.</dd>
+            <dt>table</dt>
+            <dd>Značka, která zajistí ohraničení celé tabulky</dd>
+            <dt>thead</dt>
+            <dd>Záhlaví tabulky</dd>
+            <dt>tbody</dt>
+            <dd>Tělo tabulky</dd>
+            <dt>tfoot</dt>
+            <dd>Pata (spodní část) tabulky</dd>
+
         </dl>
     </main>
     <footer>
