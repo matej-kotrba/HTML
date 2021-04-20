@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 <html lang="cs">
-    <head>
-        <title>Multimédia a HTML</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/styles.css" rel="stylesheet">
-        <link href="css/multimedia.css" rel="stylesheet">
-        <link rel="icon" href="img/tulen-upraveny.png" type="image/png" sizes="50x50">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+
+<head>
+    <title>Multimédia a HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/multimedia.css" rel="stylesheet">
+    <link rel="icon" href="img/tulen-upraveny.png" type="image/png" sizes="50x50">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    </head>
-     
-    <body>
-        
+</head>
+
+<body>
+
     <!--Horní navigační lišta-->
-        <div class="topnav">
-            <a href="./galerie/index.html">Fotogalerie</a>
-            <a href="./index.html">Tabulka</a>
-            <a class="active" href="#">Multimédia</a>
-          </div>
-        <header>
-            <h1 class="animate__animated animate__backInDown"><i class="fa fa-video-camera" aria-hidden="true"></i>
-                 Multimedia a HTML <i class="fa fa-volume-up" aria-hidden="true"></i>
-            </h1>
-            <div class="mode">
-            <button class="button" onclick="zmena()">Přepnout stránku do "Dark Mode".</button>           
+    <div class="topnav">
+        <a href="./galerie/index.html">Fotogalerie</a>
+        <a href="./index.html">Tabulka</a>
+        <a class="active" href="#">Multimédia</a>
+    </div>
+    <header>
+        <h1 class="animate__animated animate__backInDown"><i class="fa fa-video-camera" aria-hidden="true"></i>
+            Multimedia a HTML <i class="fa fa-volume-up" aria-hidden="true"></i>
+        </h1>
+        <div class="mode">
+            <button class="button" onclick="zmena()">Přepnout stránku do "Dark Mode".</button>
             <button class="button" onclick="zmena1()">Přepnout stránku do "Light Mode".</button>
-            </div>
-            <button class="info" type="button" onclick="d()">Informace</button>            
-        </header>
-           
-        <main>
-            <div class="anim"><a href="https://cs.wikipedia.org/wiki/Tule%C5%88_obecn%C3%BD" target="_blank"><img class="tulen" src="./img/tulen.png" alt="Tuleň Obecný"></a></div>
-            <h2>Obrázky v HTML</h2>
-            <figure>
-                <img src="img/komensky.png" alt="Jan Amos Komenský">
-                <figcaption>Český pedagog a spisovatel Jan Amos Komenský</figcaption>
-            </figure>
-            <h2>Audio a video v HTML</h2>
-            <figure>
-                <!--Video-->
-                <video width="320" height="240" controls muted>
-                    <source src="img/Seal_clapping.mp4" type="video/mp4">
-                        Váš prohlížeč tento formát nepodporuje.
-                </video>
-                <figcaption>Tuleň co se plácá po břiše</figcaption>
-            </figure>
-                <!--Audio-->
-            <figure>
-                <audio controls>
-                    <source src="img/seal.wav" type="audio/wav">
-                        Váš prohlížeš tento formát nepodporuje.                       
-                    </audio>
-                    <figcaption>Tuleň</figcaption>
-            </figure>
-            <h2>Video z YouTube</h2>
-            <figure>
-            <iframe width="420" height="315" src="https://www.youtube.com/watch?v=tsDxdAdv_Qs"></iframe>
-            </figure>
+        </div>
+        <button class="info" type="button" onclick="d()">Informace</button>
+    </header>
 
-            <img class="tajemstvi" src="./img/tajemstvi1.png" alt="Tajemstvi"  width="300">
-        </main>
-        <footer>
-            <hr>
-            <p>Matěj Kotrba - IT1</p>
+    <main>
+        <div class="anim"><a href="https://cs.wikipedia.org/wiki/Tule%C5%88_obecn%C3%BD" target="_blank"><img
+                    class="tulen" src="./img/tulen.png" alt="Tuleň Obecný"></a></div>
+        <h2>Obrázky v HTML</h2>
+        <figure>
+            <img src="img/komensky.png" alt="Jan Amos Komenský">
+            <figcaption>Český pedagog a spisovatel Jan Amos Komenský</figcaption>
+        </figure>
+        <h2>Audio a video v HTML</h2>
+        <figure>
+            <!--Video-->
+            <video width="320" height="240" controls muted>
+                <source src="img/Seal_clapping.mp4" type="video/mp4">
+                Váš prohlížeč tento formát nepodporuje.
+            </video>
+            <figcaption>Tuleň co se plácá po břiše</figcaption>
+        </figure>
+        <!--Audio-->
+        <figure>
+            <audio controls>
+                <source src="img/seal.wav" type="audio/wav">
+                Váš prohlížeš tento formát nepodporuje.
+            </audio>
+            <figcaption>Tuleň</figcaption>
+        </figure>
+        <h2>Video z YouTube</h2>
+        <figure>
+            <iframe width="600" height="400" src="https://www.youtube.com/embed/tsDxdAdv_Qs?list=LL"
+                title="Tuleň" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </figure>
+
+        <img class="tajemstvi" src="./img/tajemstvi1.png" alt="Tajemstvi" width="300">
+    </main>
+    <footer>
+        <hr>
+        <p>Matěj Kotrba - IT1</p>
 
         <!--<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Datum zjistíte kliknutím</button>
         <p id="demo"></p>
         <p id="p2">sasdasd</p>-->
-        
+
         <script>
             function d() {
-            //document.getElementById("demo").innerHTML = ":)";//
-            window.alert('Je možné, že neuvidíte video z YouTube kvůli zabezpečení vašeho prohlížeče.');
-              
+                //document.getElementById("demo").innerHTML = ":)";//
+                window.alert('Je možné, že neuvidíte video z YouTube kvůli zabezpečení vašeho prohlížeče.');
+
             }
             function zmena() {
-            document.body.style.backgroundImage = "linear-gradient(to bottom right ,rgb(24,23,23), rgb(24,23,28)";
-            document.body.style.color = "rgb(214, 214, 110)";
+                document.body.style.backgroundImage = "linear-gradient(to bottom right ,rgb(24,23,23), rgb(24,23,28)";
+                document.body.style.color = "rgb(214, 214, 110)";
             }
             function zmena1() {
-            document.body.style.backgroundImage = "linear-gradient(to right,#00ffee, #0062ff9f)";
-            document.body.style.color = "black";
-                
+                document.body.style.backgroundImage = "linear-gradient(to right,#00ffee, #0062ff9f)";
+                document.body.style.color = "black";
+
             }
 
         </script>
-        </footer>
-    </body>
+    </footer>
+</body>
+
 </html>
